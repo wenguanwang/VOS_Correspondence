@@ -1,5 +1,5 @@
 # Boosting Video Object Segmentation via Space-time Correspondence Learning
-[[`arXiv`](https://arxiv.org/abs/2303.10100)] [[`BibTeX`](#CitingSemiVOS)]
+[[`arXiv`](https://arxiv.org/abs/2304.06211)] [[`BibTeX`](#CitingSemiVOS)]
 
 ## Updates
 * Our new project [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything) which focuses on the segmentation and tracking of any objects in videos, utilizing both automatic and interactive methods has been released.
