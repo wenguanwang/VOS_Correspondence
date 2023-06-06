@@ -13,7 +13,6 @@ from model.network import STCN
 from model.losses import LossComputer, iou_hooks_mo, iou_hooks_so
 from util.log_integrator import Integrator
 from util.image_saver import pool_pairs
-from model.ema import EMA
 import math
 
 class STCNModel:
@@ -25,14 +24,6 @@ class STCNModel:
         self.STCN = nn.parallel.DistributedDataParallel(
             STCN(self.single_object).cuda(), 
             device_ids=[local_rank], output_device=local_rank, broadcast_buffers=False)
-        ##################################################################################################################
-#         self.ema_STCN = EMA(
-#             self.STCN,
-#             beta = 0.9999,              # exponential moving average factor
-#             update_after_step = 0,    # only after this number of .update() calls will it start updating
-#             update_every = 1,          # how often to actually update, to save on compute (updates every 10th .update() call)
-#             power = 4/5,
-#         )
 
         # Setup logger when local_rank=0
         self.logger = logger
