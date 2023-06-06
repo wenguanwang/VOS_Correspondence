@@ -2,7 +2,7 @@
 [[`arXiv`](https://arxiv.org/abs/2304.06211)] [[`BibTeX`](#CitingSemiVOS)]
 
 ## Updates
-* Code, ckpt and training log have been released. Readme will be updated. 
+* Code, ckpt and training log have been released [here](https://github.com/wenguanwang/VOS_Correspondence/releases/tag/CKPT). Readme will be updated. 
 * Our new project [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything) which focuses on the segmentation and tracking of any objects in videos, utilizing both automatic and interactive methods has been released.
 * This repo will release an official *Pytorch** implementation.
 
